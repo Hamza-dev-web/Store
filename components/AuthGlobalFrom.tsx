@@ -114,8 +114,9 @@ const closeAllModal = ()=> {
         width={600}
         height={600}
         alt="Store"
-        className="h-full w-full object-cover"
+        className=" object-cover"
         priority
+        
       />
     </div>
     {/* Form Section */}
