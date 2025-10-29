@@ -109,15 +109,7 @@ const closeAllModal = ()=> {
   <div className="max-w-4xl w-full bg-white rounded-lg shadow-lg overflow-hidden flex flex-col md:flex-row">
     {/* Image Section */}
     <div className="hidden md:block md:w-1/2">
-      <Image
-        src="/store.png"
-        width={600}
-        height={600}
-        alt="Store"
-        className=" object-cover"
-        priority
-        
-      />
+  <div className={`" bg-amber-100 w-[400px] ${type === "sign-up" ? "h-[600px]":"h-[400px]" } rounded-3xl`}></div>
     </div>
     {/* Form Section */}
     <div className="w-full md:w-1/2 p-8 sm:p-10">
