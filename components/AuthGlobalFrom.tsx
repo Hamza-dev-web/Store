@@ -101,6 +101,7 @@ catch(err :any){
 const closeAllModal = ()=> {
   setAccountId("")
   setEmail("")
+  window.location.reload()
   
 }
   return (
@@ -110,8 +111,8 @@ const closeAllModal = ()=> {
     <div className="hidden md:block md:w-1/2">
       <Image
         src="/store.png"
-        width={900}
-        height={500}
+        width={600}
+        height={600}
         alt="Store"
         className="h-full w-full object-cover"
         priority
