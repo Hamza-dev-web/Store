@@ -104,7 +104,7 @@ const closeAllModal = ()=> {
   
 }
   return (
-<div className="min-h-screen  mr-[-100px] flex items-center justify-center bg-gray-50 px-4 sm:px-6 lg:px-8">
+<div className="min-h-screen w-screen  mr-[-140px] flex items-center justify-center bg-gray-50 px-4 sm:px-6 lg:px-8">
   <div className="max-w-4xl w-full bg-white rounded-lg shadow-lg overflow-hidden flex flex-col md:flex-row">
     {/* Image Section */}
     <div className="hidden md:block md:w-1/2">
