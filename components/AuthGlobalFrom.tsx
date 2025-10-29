@@ -98,7 +98,11 @@ catch(err :any){
   //setErrorMessage(err)
 }
   }
-  console.log(file)
+const closeAllModal = ()=> {
+  setAccountId("")
+  setEmail("")
+  
+}
   return (
 <div className="min-h-screen  mr-[-100px] flex items-center justify-center bg-gray-50 px-4 sm:px-6 lg:px-8">
   <div className="max-w-4xl w-full bg-white rounded-lg shadow-lg overflow-hidden flex flex-col md:flex-row">
@@ -196,8 +200,6 @@ catch(err :any){
           />
           </>
           }
-
-          {/* Submit Button */}
      {type === 'sign-up' ? (
            <Button
             type="submit"
@@ -218,7 +220,11 @@ catch(err :any){
         <>
           {
 
-<OptModal userId={accountId} email={email}/>
+<OptModal
+ userId={accountId} 
+ email={email}
+ closeAllModal={closeAllModal}
+ />
           
           /* OTP Modal or additional component can be added here */}
         </>

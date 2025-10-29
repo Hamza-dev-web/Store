@@ -20,7 +20,7 @@ import { Label } from "@/components/ui/label"
 import { Login, SendKey } from "@/lib/action/users.action"
 import { useRouter } from "next/navigation"
 
-export function OptModal({userId , email} :{userId :string , email :string}) {
+export function OptModal({userId , email , closeAllModal} :{userId :string , email :string , closeAllModal : ()=> void}) {
   const [value , setValue] = React.useState("")
   const [isSend , setisSend] = React.useState(false)
   const router = useRouter()
@@ -89,6 +89,7 @@ router.push("/")
           type="button"
           variant="outline"
           className="font-bold italic font-[cursive] border-cyan-700 text-cyan-800 hover:bg-cyan-50"
+          onClick={()=> closeAllModal()}
         >
           Cancel
         </Button>
